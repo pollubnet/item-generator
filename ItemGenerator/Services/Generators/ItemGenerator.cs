@@ -28,29 +28,23 @@ namespace ExampleItemGenerator.Services.Generators
 		public Item Generate()
 		{
 			var value = _rnd.NextSingle();
-			foreach (var modifier in _modifiers)
-			{
-				if (value < modifier.ValueBelow)
-				{
-					var item = new Item
-					{
-						Name = _nameGenerator.GenerateName(),
+			var modifier = _modifiers.First(m => m.ValueBelow > value);
 
-						Rarity = modifier.Rarity,
+            var item = new Item
+            {
+                Name = _nameGenerator.GenerateName(),
 
-						Agility = modifier.AgilityRange.GenerateStat(_rnd),
-						Defense = modifier.DefenseRange.GenerateStat(_rnd),
-						Intelligence = modifier.IntelligenceRange.GenerateStat(_rnd),
-						Strength = modifier.StrengthRange.GenerateStat(_rnd),
-						Health = modifier.HealthRange.GenerateStat(_rnd)
-					};
+                Rarity = modifier.Rarity,
 
-					return item;
-				}
-			}
+                Agility = modifier.AgilityRange.GenerateStat(_rnd),
+                Defense = modifier.DefenseRange.GenerateStat(_rnd),
+                Intelligence = modifier.IntelligenceRange.GenerateStat(_rnd),
+                Strength = modifier.StrengthRange.GenerateStat(_rnd),
+                Health = modifier.HealthRange.GenerateStat(_rnd)
+            };
 
-			throw new InvalidOperationException("No valid modifier found.");
-		}
+            return item;
+        }
 	}
 }
 
