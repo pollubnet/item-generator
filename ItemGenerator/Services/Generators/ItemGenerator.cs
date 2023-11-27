@@ -11,7 +11,7 @@ namespace ExampleItemGenerator.Services.Generators
 
 		public ItemGenerator()
 		{
-			_nameGenerator = new TemporaryNameGenerator();
+			_nameGenerator = new ChristmasNameGenerator();
 
 			_rnd = new Random();
 			_modifiers = new List<RarityModifier>()
