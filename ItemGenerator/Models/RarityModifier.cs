@@ -1,4 +1,5 @@
 ﻿using System;
+using ExampleItemGenerator.Services;
 
 namespace ExampleItemGenerator.Models
 {
@@ -16,20 +17,16 @@ namespace ExampleItemGenerator.Models
         public RarityModifier(
             float valueBelow,
             ItemRarity rarity,
-            StatRange agilityRange,
-            StatRange strengthRange,
-            StatRange intelligenceRange,
-            StatRange defenseRange,
-            StatRange healthRange
+            RarityProperties props
         )
         {
             ValueBelow = valueBelow;
             Rarity = rarity;
-            AgilityRange = agilityRange;
-            StrengthRange = strengthRange;
-            IntelligenceRange = intelligenceRange;
-            DefenseRange = defenseRange;
-            HealthRange = healthRange;
+            AgilityRange = props.AgilityRange;
+            StrengthRange = props.StrengthRange;
+            IntelligenceRange = props.IntelligenceRange;
+            DefenseRange = props.DefenseRange;
+            HealthRange = props.HealthRange;
         }
     }
 }

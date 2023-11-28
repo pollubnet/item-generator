@@ -19,56 +19,68 @@ namespace ExampleItemGenerator.Services.Generators
                 new(
                     0.01f,
                     ItemRarity.Legendary,
-                    new(-100, 100),
-                    new(-20, 60),
-                    new(-7, 10),
-                    new(-15, 30),
-                    new(-30, 40)
+                    new RarityProperties {
+                        AgilityRange = new(-100, 100),
+                        StrengthRange = new(-20, 60),
+                        IntelligenceRange = new(-7, 10),
+                        DefenseRange = new(-15, 30),
+                        HealthRange = new(-30, 40)
+                    }
                 ),
                 new(
                     0.2f,
                     ItemRarity.Epic,
-                    new(-9, 70),
-                    new(-10, 30),
-                    new(-8, 10),
-                    new(-7, 30),
-                    new(-10, 20)
+                    new RarityProperties {
+                        AgilityRange = new(-9, 70),
+                        StrengthRange = new(-10, 30),
+                        IntelligenceRange = new(-8, 10),
+                        DefenseRange = new(-7, 30),
+                        HealthRange = new(-10, 20)
+                    }
                 ),
                 new(
                     0.4f,
                     ItemRarity.Insane,
-                    new(10, 100),
-                    new(5, 60),
-                    new(1, 10),
-                    new(7, 30),
-                    new(10, 20)
+                    new RarityProperties {
+                        AgilityRange = new(10, 100),
+                        StrengthRange = new(5, 60),
+                        IntelligenceRange = new(1, 10),
+                        DefenseRange = new(7, 30),
+                        HealthRange = new(10, 20)
+                    }
                 ),
                 new(
                     0.5f,
                     ItemRarity.Rare,
-                    new(2, 10),
-                    new(5, 60),
-                    new(1, 10),
-                    new(7, 30),
-                    new(10, 20)
+                    new RarityProperties {
+                        AgilityRange = new(2, 10),
+                        StrengthRange = new(5, 60),
+                        IntelligenceRange = new(1, 10),
+                        DefenseRange = new(7, 30),
+                        HealthRange = new(10, 20)
+                    }
                 ),
                 new(
                     0.6f,
                     ItemRarity.Uncommon,
-                    new(-2, 10),
-                    new(-5, 10),
-                    new(-10, 10),
-                    new(7, 20),
-                    new(10, 20)
+                    new RarityProperties {
+                        AgilityRange = new(-2, 10),
+                        StrengthRange = new(-5, 10),
+                        IntelligenceRange = new(-10, 10),
+                        DefenseRange = new(7, 20),
+                        HealthRange = new(10, 20)
+                    }
                 ),
                 new(
                     1f,
                     ItemRarity.Common,
-                    new(-2, 2),
-                    new(-5, 5),
-                    new(-5, 5),
-                    new(-3, 3),
-                    new(-8, 8)
+                    new RarityProperties {
+                        AgilityRange = new(-2, 2),
+                        StrengthRange = new(-5, 5),
+                        IntelligenceRange = new(-5, 5),
+                        DefenseRange = new(-3, 3),
+                        HealthRange = new(-8, 8)
+                    }
                 )
             };
         }
