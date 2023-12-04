@@ -13,8 +13,6 @@
     <None Remove="Services\Generators\" />
   </ItemGroup>
   <ItemGroup>
-    <Folder Include="Models\" />
     <Folder Include="Services\" />
-    <Folder Include="Services\Generators\" />
   </ItemGroup>
 </Project>

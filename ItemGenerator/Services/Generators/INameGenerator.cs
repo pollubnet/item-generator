@@ -4,6 +4,6 @@ namespace ExampleItemGenerator.Services.Generators
 {
     public interface INameGenerator
     {
-        string GenerateName();
+        Task<string> GenerateName();
     }
 }

@@ -9,10 +9,11 @@ namespace ExampleItemGenerator.Models
 
         public ItemRarity Rarity { get; set; } = ItemRarity.Common;
 
-        public int Agility { get; set; } = 0;
-        public int Strength { get; set; } = 0;
-        public int Intelligence { get; set; } = 0;
-        public int Defense { get; set; } = 0;
-        public int Health { get; set; } = 0;
+        public Dictionary<ItemStat, int> Statistics { get; init; } = new();
+
+        public void SetStat(ItemStat stat, int value)
+        {
+            Statistics[stat] = value;
+        }
     }
 }

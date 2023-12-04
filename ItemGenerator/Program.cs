@@ -1,26 +1,21 @@
-﻿using ExampleItemGenerator.Services.Generators;
+﻿using ExampleItemGenerator.Models;
+using ExampleItemGenerator.Services.Generators;
 
 IItemGenerator itemGenerator = new ItemGenerator();
 var count = 0;
 
 while (true)
 {
-    var item = itemGenerator.Generate();
-    if (item.Rarity != ExampleItemGenerator.Models.ItemRarity.Legendary)
-        continue;
+    var item = await itemGenerator.Generate();
 
     Console.WriteLine($"Item: {item.Name} ({item.Rarity})");
-    Console.WriteLine($"Agility: {item.Agility}");
-    Console.WriteLine($"Defense: {item.Defense}");
-    Console.WriteLine($"Intelligence: {item.Intelligence}");
-    Console.WriteLine($"Strength: {item.Strength}");
-    Console.WriteLine($"Health: {item.Health}");
 
+    foreach (var itemStat in Enum.GetValues<ItemStat>())
+        Console.WriteLine($"{itemStat} = {item.Statistics[itemStat]}");
+    
     Console.WriteLine("\n-------------\n");
     count++;
 
     if (count >= 10)
         break;
 }
-
-Console.ReadLine();

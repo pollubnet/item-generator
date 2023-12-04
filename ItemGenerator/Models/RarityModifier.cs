@@ -7,29 +7,20 @@ namespace ExampleItemGenerator.Models
         public float ValueBelow { get; init; } = 0f;
         public ItemRarity Rarity { get; init; } = ItemRarity.Common;
 
-        public StatRange AgilityRange { get; init; }
-        public StatRange StrengthRange { get; init; }
-        public StatRange IntelligenceRange { get; init; }
-        public StatRange DefenseRange { get; init; }
-        public StatRange HealthRange { get; init; }
-
+        public Dictionary<ItemStat, StatRange> StatRanges { get; init; } = new();
+        
         public RarityModifier(
             float valueBelow,
-            ItemRarity rarity,
-            StatRange agilityRange,
-            StatRange strengthRange,
-            StatRange intelligenceRange,
-            StatRange defenseRange,
-            StatRange healthRange
+            ItemRarity rarity
         )
         {
             ValueBelow = valueBelow;
             Rarity = rarity;
-            AgilityRange = agilityRange;
-            StrengthRange = strengthRange;
-            IntelligenceRange = intelligenceRange;
-            DefenseRange = defenseRange;
-            HealthRange = healthRange;
+        }
+
+        public void SetStatRange(ItemStat stat, StatRange range)
+        {
+            StatRanges[stat] = range;
         }
     }
 }

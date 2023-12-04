@@ -5,6 +5,6 @@ namespace ExampleItemGenerator.Services.Generators
 {
     public interface IItemGenerator
     {
-        Item Generate();
+        Task<Item> Generate();
     }
 }
