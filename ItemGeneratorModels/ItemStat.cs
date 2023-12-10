@@ -1,4 +1,4 @@
-namespace ExampleItemGenerator.Models;
+namespace ItemGeneratorModels;
 
 public enum ItemStat
 {

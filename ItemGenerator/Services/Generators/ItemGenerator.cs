@@ -1,6 +1,6 @@
 ﻿using System;
 using System.Text.Json;
-using ExampleItemGenerator.Models;
+using ItemGeneratorModels;
 
 namespace ExampleItemGenerator.Services.Generators
 {

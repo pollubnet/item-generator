@@ -1,5 +1,5 @@
 ﻿using Bogus.DataSets;
-using ExampleItemGenerator.Models;
+using ItemGeneratorModels;
 using ExampleItemGenerator.Services.Generators;
 using System.Text.Json;
 

@@ -1,6 +1,6 @@
 ﻿using System;
 
-namespace ExampleItemGenerator.Models
+namespace ItemGeneratorModels
 {
     public enum ItemRarity
     {

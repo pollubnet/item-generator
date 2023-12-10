@@ -22,6 +22,7 @@
   </ItemGroup>
 
   <ItemGroup>
+    <ProjectReference Include="..\ItemGeneratorModels\ItemGeneratorModels.csproj" />
     <ProjectReference Include="..\ItemGenerator\ExampleItemGenerator.csproj" />
   </ItemGroup>
 

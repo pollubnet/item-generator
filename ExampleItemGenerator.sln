@@ -5,7 +5,9 @@ VisualStudioVersion = 17.9.34321.82
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ExampleItemGenerator", "ItemGenerator\ExampleItemGenerator.csproj", "{F78F0BA2-1FCD-49CD-BFAE-476DC2BC8F05}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ExampleItemGenerator.Api", "ExampleItemGenerator.Api\ExampleItemGenerator.Api.csproj", "{D5A9C099-806F-40FF-9EB9-6A62372C0B21}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ExampleItemGenerator.Api", "ExampleItemGenerator.Api\ExampleItemGenerator.Api.csproj", "{D5A9C099-806F-40FF-9EB9-6A62372C0B21}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ItemGeneratorModels", "ItemGeneratorModels\ItemGeneratorModels.csproj", "{3301D59E-F7D3-4874-B822-FDB74F2D0312}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -21,6 +23,10 @@ Global
 		{D5A9C099-806F-40FF-9EB9-6A62372C0B21}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{D5A9C099-806F-40FF-9EB9-6A62372C0B21}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{D5A9C099-806F-40FF-9EB9-6A62372C0B21}.Release|Any CPU.Build.0 = Release|Any CPU
+		{3301D59E-F7D3-4874-B822-FDB74F2D0312}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{3301D59E-F7D3-4874-B822-FDB74F2D0312}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{3301D59E-F7D3-4874-B822-FDB74F2D0312}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{3301D59E-F7D3-4874-B822-FDB74F2D0312}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

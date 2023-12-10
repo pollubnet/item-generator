@@ -1,5 +1,5 @@
 ﻿using System;
-using ExampleItemGenerator.Models;
+using ItemGeneratorModels;
 
 namespace ExampleItemGenerator.Services.Generators
 {

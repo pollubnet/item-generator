@@ -1,4 +1,4 @@
-﻿using ExampleItemGenerator.Models;
+﻿using ItemGeneratorModels;
 using ExampleItemGenerator.Services.Generators;
 
 IItemGenerator itemGenerator = new ItemGenerator();
